@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+    height: 93vmin;
+    width: 93vmin;
+    background: grey;
+}
+.square {
+    height: 30vmin;
+    width: 30vmin;
+    background-color: white;
+    text-align: center;
+}
+
+.red {
+    background-color: indianred;
+    cursor: pointer;
+}
+
+.blue {
+    background-color: lightskyblue;
+    cursor: pointer;
+}
