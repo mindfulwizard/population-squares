@@ -39,7 +39,8 @@ function getData() {
         })
         .then(data => {
             return data.map(popTables => populationReducer(popTables))
-            .sort((a,b) => a.population > b.population ? -1 : 1).slice(0,5);
+            .sort((a,b) => a.population > b.population ? -1 : 1)
+            .slice(0,5);
          });
 }
 
