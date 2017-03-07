@@ -33,7 +33,7 @@ function getData() {
     const url = 'https://population.simonsfoundation.org/countries';
     return APICall(url)
         .then(data => {
-            countryNames = smallestNames(data.countries);
+            const countryNames = smallestNames(data.countries);
             const newUrl = 'https://population.simonsfoundation.org/population/';
             return Promise.all(countryNames.map(name => APICall(newUrl + '2017/' + name)))
         })
